@@ -3,8 +3,6 @@ name: Update Notion Training Calendar
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"
 
 permissions:
   contents: read
@@ -39,5 +37,4 @@ jobs:
           path: public
 
       - name: Deploy Pages
-        id: deployment
         uses: actions/deploy-pages@v4
